@@ -30,7 +30,7 @@ async def add_news_text(msg: Message, state: FSMContext):
         file.write(f'{msg.text}')
 
     await msg.answer(f'News successfully added')
-    print(f'Added new news [{datetime.datetime.now}]')
+    print(f'Added new news [{datetime.datetime.now()}]')
     await state.finish()
 
 

@@ -1,6 +1,5 @@
 import asyncio
 import datetime
-import os
 
 from aiogram import Bot, Dispatcher
 
@@ -34,7 +33,7 @@ async def main():
     # if not os.path.exists(f'db\\{DB_NAME}.db'):
     #     create_database()
 
-    print(f'Bot started [{datetime.datetime.now}]')
+    print(f'Bot started [{datetime.datetime.now()}]')
     await dp.start_polling()
 
 
